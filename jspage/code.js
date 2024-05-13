@@ -21,12 +21,11 @@ nav.appendChild(ul);
 let liImg = document.createElement('li');
 liImg.className = 'nav-item';
 ul.appendChild(liImg);
-
 let aImg = document.createElement('a');
 liImg.appendChild(aImg);
 
 let imgNav = document.createElement('img');
-imgNav.src = 'img/icon5.jpg';
+imgNav.src = 'jspage/img/icon5.jpg';
 imgNav.alt = '';
 aImg.appendChild(imgNav);
 
@@ -93,10 +92,10 @@ divDestinations.className = 'destinations';
 divMainContent.appendChild(divDestinations);
 
 let destinations = [
-    { title: 'ITALY', img: 'img/italy.jpg', desc: 'Rome, Milan, Naples', offer: 'SILVER HOTEL, 4 NIGHTS, 5 STARS', price: '$1,800 BOOK NOW' },
-    { title: 'FRANCE', img: 'img/france.jpg', desc: 'Paris, Marseille, Lyon', offer: 'NEW PALACE, 5 NIGHTS, 5 STARS', price: '$1,200 BOOK NOW' },
-    { title: 'GERMANY', img: 'img/germany.jpg', desc: 'Berlin, Hamburg Munich', offer: 'LUX HOTEL, 5 NIGHTS, 6 STARS', price: '$1,300 BOOK NOW' },
-    { title: 'SPAIN', img: 'img/spain.jpg', desc: 'Madrid, Barcelona, Valencia', offer: 'GOOD HOTEL, 4 NIGHTS, 6 STARS', price: 'GOOD HOTEL BOOK NOW' }
+    { title: 'ITALY', img: 'jspage/img/italy.jpg', desc: 'Rome, Milan, Naples', offer: 'SILVER HOTEL, 4 NIGHTS, 5 STARS', price: '$1,800 BOOK NOW' },
+    { title: 'FRANCE', img: 'jspage/img/france.jpg', desc: 'Paris, Marseille, Lyon', offer: 'NEW PALACE, 5 NIGHTS, 5 STARS', price: '$1,200 BOOK NOW' },
+    { title: 'GERMANY', img: 'jspage/img/germany.jpg', desc: 'Berlin, Hamburg Munich', offer: 'LUX HOTEL, 5 NIGHTS, 6 STARS', price: '$1,300 BOOK NOW' },
+    { title: 'SPAIN', img: 'jspage/img/spain.jpg', desc: 'Madrid, Barcelona, Valencia', offer: 'GOOD HOTEL, 4 NIGHTS, 6 STARS', price: 'GOOD HOTEL BOOK NOW' }
 ];
 
 destinations.forEach(destination => {
@@ -148,10 +147,10 @@ let divFooterIcons = document.createElement('div');
 divFooterIcons.className = 'footer-icons';
 footer.appendChild(divFooterIcons);
 
-let icons = ['1', '2', '3', '1', '2'];
+let icons = ['1', '2', '3', '1', '2','3'];
 icons.forEach(icon => {
     let img = document.createElement('img');
-    img.src = 'img/' + icon + '.jpg';
+    img.src = 'jspage/img/' + icon + '.jpg';
     img.alt = 'icon' + icon;
     divFooterIcons.appendChild(img);
 });
@@ -171,7 +170,7 @@ body {
 }
 
 .half-background {
-    background-image: url('img/viasdetren.jpg');
+    background-image: url('jspage/img/viasdetren.jpg');
     background-size: cover;
     height: 70vh; 
 }
